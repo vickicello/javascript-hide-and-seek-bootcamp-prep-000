@@ -15,5 +15,16 @@ function deepestChild() {
       const secondList = rankedLists[1];
       
 function increaseRankBy(n) {
-  
+  let children = firstList.children;
+      let start = 1;
+      for (let i = 0, l = children.length; i < l; i++) {
+        expect(parseInt(children[i].innerHTML)).toEqual(start + i + 3);
+      }
+
+      children = secondList.children;
+      start = 12;
+
+      for (let i = 0, l = children.length; i < l; i++) {
+        expect(parseInt(children[i].innerHTML)).toEqual(start - i + 3);
+      }
 }
