@@ -1,3 +1,3 @@
 function getFirstSelector(selector) {
-  return document.querySelector('.ranked-list');
+  return document.querySelector('.app');
 }
